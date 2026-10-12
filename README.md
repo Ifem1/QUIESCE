@@ -178,7 +178,7 @@ Live evidence on the [GenLayer Studio Explorer](https://explorer-studio.genlayer
 
 See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for component/commitment setup transactions, all observed final states, and additional source-parity details.
 
-Local gates are recorded in `BUILD_STATUS.md`. The `main` branch, sole `Ifem1/quiesce` origin, and local commit are ready; GitHub push and Actions verification await the required workflow OAuth scope on the authorized `Ifem1` account.
+Local gates and deployment evidence are recorded in `BUILD_STATUS.md` and `docs/DEPLOYMENT.md`. The project is pushed to the sole `Ifem1/quiesce` origin on `main`; [GitHub Actions CI passed](https://github.com/Ifem1/QUIESCE/actions/runs/38307214084), including Direct Mode tests and GenVM lint.
 
 ## Threat model / honesty
 
