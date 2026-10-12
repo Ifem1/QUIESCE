@@ -7,7 +7,7 @@ OWNER / DESTINATION
 - DO NOT clone anything before starting.
 - Ifem will unzip this ZIP herself and open the unzipped folder directly in Codex.
 - Work in that unzipped folder only.
-- There must be no history, remote, commit, branch, file, or textual reference implying ometere123 is the owner of this project.
+- There must be no history, remote, commit, branch, file, or textual reference implying the prior account is the owner of this project.
 
 NON-NEGOTIABLE NETWORK BASELINE
 - Stable Studionet only.
