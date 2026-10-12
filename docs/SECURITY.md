@@ -10,6 +10,7 @@
 - Automatic v1 rebinds cannot move an obligation to a component under another owner.
 - `TARGET_REQUIRED`, `AMBIGUOUS`, unassessed, and not-yet-rebound commitments block retirement.
 - `is_quiescent` is hash-bound to the exact certified plan definition.
+- Cancelling an open retirement restores the target's active state but does not reverse a beneficiary-approved terminal rebind. The original commitment remains `REBOUND`, and its active child commitment remains attached to the replacement component.
 
 ## Deliberate non-goals
 

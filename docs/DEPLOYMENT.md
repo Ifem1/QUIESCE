@@ -12,7 +12,7 @@ Observed live evidence only. Every listed transaction was queried until `FINALIZ
 - Deployment transaction: `0x53de94ed7bf150c6edf243f3a7a12f4669c2d439150a0eed7c32c3372cb34767` — `FINALIZED`, `MAJORITY_AGREE`
 - Deployed source equals `contracts/quiesce.py` exactly. Local and fetched deployed source SHA-256: `63921513aec1f6d7181760540052a7e484302ca5775de41fb81ff1babc89973f`.
 
-The issuer/deployer was the user-confirmed local profile `truss-deployer` (`0x39680bd423437c0eaa18493629652821ec672c61`). The beneficiary used a distinct user-supplied throwaway funded test wallet (`0xD6423aE82a975d55C6CeaC222827A727325e0459`). Its private key was imported only into the user's GenLayer account store, outside this repository; no key or keystore is part of the project.
+The issuer/deployer was the configured local GenLayer deployer (`0x39680bd423437c0eaa18493629652821ec672c61`). The beneficiary used a distinct user-supplied throwaway funded test wallet (`0xD6423aE82a975d55C6CeaC222827A727325e0459`). Its private key was imported only into the user's GenLayer account store, outside this repository; no key or keystore is part of the project.
 
 ## Target-specific blocker lifecycle
 
