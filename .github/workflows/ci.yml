@@ -1,0 +1,21 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20', cache: 'npm' }
+      - run: npm install
+      - run: npm run guard:cli
+      - run: npm run guard:network
+      - run: python -m py_compile contracts/quiesce.py examples/retirement_gate.py
+      - run: python scripts/preflight.py
+      - run: pip install -r requirements-test.txt
+      - run: pytest tests/direct -v -s
+      - run: pip install genvm-linter==0.11.0
+      - run: genvm-lint check contracts/quiesce.py --json
+        env: { GENVM_VERSION: v0.2.12 }

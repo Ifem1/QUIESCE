@@ -1,0 +1,15 @@
+{
+  "name": "quiesce",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Contract-only GenLayer semantic quiescence primitive",
+  "devDependencies": {
+    "genlayer": "0.39.1"
+  },
+  "scripts": {
+    "cli:version": "genlayer --version",
+    "guard:cli": "node scripts/check-cli.mjs",
+    "preflight": "python scripts/preflight.py",
+    "guard:network": "python scripts/network_guard.py"
+  }
+}
